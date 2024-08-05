@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Blood Bank Data Processor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Blood Bank Data Analyzer é um sistema web desenvolvido para processar e analisar dados de candidatos a doadores de sangue. Utilizando tecnologias como Java com Spring Boot para o backend, Angular para o frontend e MySQL para o banco de dados, o sistema permite a visualização de informações cruciais, como a distribuição de candidatos por estado, cálculo do IMC médio por faixa etária, percentual de obesidade entre homens e mulheres, média de idade por tipo sanguíneo e a quantidade de possíveis doadores para cada tipo sanguíneo receptor. Este projeto visa facilitar a gestão e análise de dados em bancos de sangue, contribuindo para uma melhor tomada de decisões e eficiência operacional.
 
-## Available Scripts
+## 🚀 Instruções para Configuração Local
 
-In the project directory, you can run:
+Para obter uma cópia do Blood Bank Data Analyzer em operação na sua máquina local para fins de desenvolvimento e teste, siga os passos abaixo:
 
-### `npm start`
+Consulte **[Implantação](www.nasa.com.br)** para saber como implantar o projeto.
+___
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📋 Pré-requisitos Front-End 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Backend
+- HTML e CSS: Conhecimento básico para estruturar e estilizar a interface do usuário.
+- JavaScript: Habilidade em JavaScript para adicionar interatividade e manipular o DOM.
+- React: Experiência com React para criar componentes reutilizáveis e gerenciar o estado da aplicação.
+- Axios: Familiaridade com a biblioteca Axios para fazer requisições HTTP.
+- JSON: Capacidade de trabalhar com arquivos JSON para ler e enviar dados.
+- Ambiente de Desenvolvimento: Configuração de um ambiente de desenvolvimento local com Node.js e um editor de código como VSCode.
+- Node.js e npm: Certifique-se de ter o Node.js e o npm instalados no seu sistema. Você pode baixá-los aqui.
+- Angular CLI: Instale o Angular CLI globalmente usando o npm com o seguinte comando:
+```
+npm install -g @angular/cli
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+___
 
-### `npm run build`
+### 🔧 Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone o repositório:
+```
+https://github.com/GustavoAnacleto/Blood-Bank.git
+```
+2. Navegue até o diretório do projeto:
+```
+cd blood-bank
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. No diretório do projeto execute no terminal:
+```
+mvn spring-boot:run
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Implantação
 
-### `npm run eject`
+Após a implantação, você pode acessar a aplicação em http://localhost:3000/ e utilizar as funcionalidades para analisar os dados dos candidatos a doadores de sangue. Por exemplo, para visualizar a quantidade de candidatos por estado, você pode acessar a seção correspondente na interface do usuário.
+## Formato do json
+```json
+[
+  {
+    "name": "João Silva",
+    "birthDate": "1999-05-15",
+    "weight": 130.0,
+    "height": 1.75,
+    "gender": "M",
+    "bloodType": "A+",
+    "state": "São Paulo"
+  },
+]
+```
+___
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✒️ Autor
+## * **Guga Nascimento** - *Dev Software Back-End* <br> <br>[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=)](https://github.com/GustavoAnacleto)<br>
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=)](https://github.com/Guga-Nascimento)<br> <br>[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guga-nascimento) 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🎁 Video de apresentação do projeto
+<a>http://bloodbankapi.netlify.app</a>
