@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-  color: #004085;
+  color: #058e17;
   margin-bottom: 20px;
 }
 
@@ -60,3 +60,36 @@ pre {
 p {
   color: red;
 }
+.results {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.result-item {
+  width: 50%;
+  background-color: #c7d9db;
+  color: #01579b; /* Azul escuro */
+  font-weight: bold;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center; /* Centraliza o texto dentro do item */
+  margin-bottom: 10px; /* Espaço entre os itens */
+  transition: box-shadow 0.3s ease; /* Transição suave para a sombra */
+  border-radius: 15px; /* Bordas arredondadas */
+}
+
+.result-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra preta ao passar o cursor */
+  background-color: #aabcbe;
+}
+
+.dark-blue-text {
+  color: #012744; /* Azul escuro */
+  font-weight: bold; /* Negrito */
+}
+
+
+
+
+
